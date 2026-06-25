@@ -1,0 +1,12 @@
+name: STVlobby
+description: $description
+prefix: STVlobby
+version: '${version}'
+
+main: win.stvworlds.sTVlobby.STVlobby
+loader: win.stvworlds.sTVlobby.STVlobbyLoader
+api-version: '1.21.11'
+load: STARTUP
+
+authors: [ Maksim6opka ]
+website: https://stvworlds.win
