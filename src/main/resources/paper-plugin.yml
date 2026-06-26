@@ -4,9 +4,17 @@ prefix: STVlobby
 version: '${version}'
 
 main: win.stvworlds.sTVlobby.STVlobby
-loader: win.stvworlds.sTVlobby.STVlobbyLoader
 api-version: '1.21.11'
 load: STARTUP
 
 authors: [ Maksim6opka ]
 website: https://stvworlds.win
+
+dependencies:
+  server:
+    LuckPerms:
+      load: BEFORE
+      required: true
+    PlaceholderAPI:
+      load: BEFORE
+      required: true
