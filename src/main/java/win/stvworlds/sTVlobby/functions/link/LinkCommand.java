@@ -109,7 +109,7 @@ public class LinkCommand implements PluginFunction {
 
                         case 403 -> {
                             Messages.sendDM(
-                                    Component.text("Недійсний API ключ"),
+                                    Component.text("Доступ заборонено"),
                                     sender,
                                     "msg",
                                     "error"
