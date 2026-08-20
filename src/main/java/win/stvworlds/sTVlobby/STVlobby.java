@@ -1,8 +1,10 @@
 package win.stvworlds.sTVlobby;
 
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import win.stvworlds.sTVlobby.functions.PluginFunction;
 import win.stvworlds.sTVlobby.functions.core.CoreCommand;
+import win.stvworlds.sTVlobby.functions.join.PlayerJoinFunction;
 import win.stvworlds.sTVlobby.functions.link.LinkCommand;
 import win.stvworlds.sTVlobby.functions.msg.MsgCommand;
 
@@ -17,7 +19,8 @@ public final class STVlobby extends JavaPlugin {
         List<PluginFunction> functions = List.of(
             new CoreCommand(this),
             new LinkCommand(this),
-            new MsgCommand(this)
+            new MsgCommand(this),
+            new PlayerJoinFunction(this)
         );
         functions.forEach(PluginFunction::register);
     }
