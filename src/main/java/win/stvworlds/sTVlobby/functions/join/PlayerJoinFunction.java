@@ -1,10 +1,5 @@
 package win.stvworlds.sTVlobby.functions.join;
 
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.format.NamedTextColor;
-import net.kyori.adventure.text.format.TextColor;
-import net.kyori.adventure.text.format.TextDecoration;
-import net.kyori.adventure.title.Title;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -17,14 +12,11 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 import win.stvworlds.sTVlobby.functions.PluginFunction;
 
-import java.time.Duration;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class PlayerJoinFunction implements PluginFunction, Listener {
 
     private static final String LOBBY_WORLD = "STVlobby";
-    private static final TextColor ACCENT = TextColor.fromHexString("#6F27F5");
-    private static final TextColor SOFT = TextColor.fromHexString("#EBEBEB");
 
     private final JavaPlugin plugin;
 
