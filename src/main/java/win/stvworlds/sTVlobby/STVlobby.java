@@ -7,6 +7,7 @@ import win.stvworlds.sTVlobby.functions.core.CoreCommand;
 import win.stvworlds.sTVlobby.functions.join.PlayerJoinFunction;
 import win.stvworlds.sTVlobby.functions.link.LinkCommand;
 import win.stvworlds.sTVlobby.functions.msg.MsgCommand;
+import win.stvworlds.sTVlobby.functions.portal.ServerTeleport;
 
 import java.util.List;
 
@@ -20,7 +21,8 @@ public final class STVlobby extends JavaPlugin {
             new CoreCommand(this),
             new LinkCommand(this),
             new MsgCommand(this),
-            new PlayerJoinFunction(this)
+            new PlayerJoinFunction(this),
+            new ServerTeleport(this)
         );
         functions.forEach(PluginFunction::register);
     }

@@ -1,1 +1,17 @@
 #бебра
+
+# Кубоид портала. Координаты pos1 и pos2 могут быть указаны в любом порядке.
+# particles: true — контур кубоїда фіолетовими частинками (ребра + центр).
+portal:
+  world: world
+  target-server: beta
+  cooldown-seconds: 0
+  particles: true
+  pos1:
+    x: 5
+    y: 100
+    z: 5
+  pos2:
+    x: -5
+    y: 105
+    z: -5
